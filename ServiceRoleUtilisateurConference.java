@@ -23,7 +23,7 @@ public class ServiceRoleUtilisateurConference {
         userConferenceRoleRepository.save(userConferenceRole);
     }
 
-    public List<RoleUtilisateurConference> getUserRolesInConference(Long userId, Long conferenceId) {
+    public List<RoleUtilisateurConferenceRepository> getUserRolesInConference(Long userId, Long conferenceId) {
         return userConferenceRoleRepository.findByUserIdAndConferenceId(userId, conferenceId);
     }
 
